@@ -1,9 +1,9 @@
-# json_to_xml_convertor_momox_28_06
+# Json_to_xml_convertor_momox_28_06
 
 In this project we are trying to impliment a service which
-takes input xml of employee orders and gives output as json.
+takes input xml file of employee orders and place order in json.
 
-Input: 
+Input xml format: 
 ```
 {
 	orders: [{
@@ -23,7 +23,7 @@ Input:
 }
 ```
 
-Output:
+Output order json format:
 ```
 {
 	'Employees': {
@@ -40,4 +40,6 @@ Output:
 	}
 }
 ```
+Note: As the endpoints are fictitious, request methods are placed in try-except block to 
+handle them for failure.
 
