@@ -5,22 +5,20 @@ takes input xml file of employee orders and place order in json.
 
 Input xml format: 
 ```
-{
-	orders: [{
-		customer: {
-			full_name: "Max Mustermann",
-			address: {
-				street: "Musterweg 3",
-				city: "Musterhausen",
-				postal_code: "12345"
-			}
-		},
-		dishes: [{
-			dish_id: 3,
-			amount: 3,
-		}, ]
-	}, ]
-}
+?xml version="1.0" encoding="utf-8"?> 
+<Employees>
+	 <Employee>
+		 <Name>Max Mustermann</Name>
+		 <Address>
+			 <Street>Musterweg 3</Street>
+			 <City>Musterhausen</City>
+			 <PostalCode>12345</PostalCode>
+		 </Address>
+		 <Order>3x Pizza Quattro Formaggi</Order>
+		 <IsAttending>true</IsAttending>
+	 </Employee>
+ ...
+</Employees>
 ```
 
 Output order json format:
